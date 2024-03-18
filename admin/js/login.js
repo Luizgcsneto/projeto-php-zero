@@ -6,6 +6,7 @@ function connect(formData){
     .then(response => response.json());    
 }
 
+
 function error(response){
     let divError = document.querySelector("#div-error");
     let message = document.querySelector("#error-message");
@@ -24,10 +25,10 @@ function success(response){
 
 (function () {
     let formLogin = document.querySelector("#form-login");
-
+ 
     formLogin.addEventListener("submit", async function (event) {
         event.preventDefault();
-
+        
         let divError = document.querySelector("#div-error");
         divError.style.display = "none";
 
